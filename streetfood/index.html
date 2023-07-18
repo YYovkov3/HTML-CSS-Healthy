@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiggestProjdect</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script>
+        function updateClock() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            var time = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("current-time").innerText = time;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var titleElement = document.querySelector(".title");
+    
+          titleElement.addEventListener("mouseenter", function() {
+            titleElement.style.left = "-10px";
+          });
+    
+          titleElement.addEventListener("mouseleave", function() {
+            titleElement.style.left = "0";
+          });
+        });
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="time">
+                <span id="current-time"></span>
+            </div>
+            <div class="menu">
+                <h3><i class="fas fa-arrow-alt-circle-down"></i> Menu</h3>
+                <ul class="small-menu">
+                    <li><a href="https://overcomebulimia.com/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/" target="_blank">Контакти</a></li>
+                    <li><a href="https://overcomebulimia.com/za-men/" target="_blank">За нас</a></li>
+                    <li><a href="https://andonovo.com/bg/recipes?gclid=CjwKCAjw44mlBhAQEiwAqP3eVkbpO72ufd42I8W-GOya8OokAfd0AFa6REaze3djpjpGxXdzwWlN3hoC4igQAvD_BwE" target="_blank">Рецепти</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100014076517102" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/ZdraveInfo/status/879599056540102657" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://bg.healthy-food-near-me.com/telegram-channels-about-mindfulness-healthy-eating-and-self-knowledge/" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                    <li><a href="https://nutrima.bg/osemte-zlatni-saveta-zdravoslovno-hranene/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/healthylicious/?hl=bg" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="center">
+            <h1 class="title">Как да се храним здравословно</h1>
+          <ul class="block">
+            <li><img class="content-img" src="IMG-29F2A0-441482-6A30D4-160283-1F0741-0ABBD0_thumb-blog_post.jpg"></li>
+            <li><img class="content-img" src="how-to-eat-healthy.jpg"></li>
+            <li><img class="content-img" src="GettyImages-854725402-1.jpg"></li>
+            <li><img class="content-img" src="istock-1155240408.jpg"></li>
+          </ul>
+        </div>
+        <div class="right-menu">
+            <h1 class="title">Няколко мотивиращи цитата</h1>
+            <p class="small">Които ще ви помогнат в трудното начало</p>
+            <ol class="order">
+                <li>Тези, които нямат време за здравословно хранене, рано или късно ще трябва да намерят време за болести.</li>
+                <p class="name">Едуард Стенли</p>
+                <li>Вашата диета е банкова сметка. Добрият избор на храна е добра инвестиция.</li>
+                <p class="name">Бетени Франкел</p>
+                <li>Здравословната диета е решение на много от нашите здравословни проблеми. Това е най-важното решение.</li>
+                <p class="name">Джон Маки</p>
+                <li>Чувствате се по-добре, когато ядете храна, която запазва хранителната стойност.</li>
+                <p class="name">Амбър Хърд</p>
+                <li>Яжте закуска като крал, обяд като принц и вечеря като бедняк.</li>
+                <p class="name">Адел Дейвис</p>
+                <li>Именно здравето е истинското богатство, а не късчета злато и сребро.</li>
+                <p class="name">Махатма Ганди</p>
+            </ol>
+            <ul class="images">
+                <li><img class="content-img" src="Organic_10.jpg"> <i class="fas fa-check"></i></li>
+                <li><img class="content-img" src="GettyImages-1407116810-scaled.avif"> <i class="fas fa-times"></i></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

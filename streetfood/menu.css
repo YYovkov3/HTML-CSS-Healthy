@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:wght@600&display=swap');
+.title{
+    text-align: center;
+    margin-top: 60px;
+    width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+.title {
+    position: relative;
+    transition: left 0.3s ease;
+  }
+
+.title:hover {
+    left: -20px;
+}
+.content, img{
+    text-align: center;
+}
+.content-img{
+    width: 700px;
+    height: 380px;
+    margin-top: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    image-rendering: crisp-edges;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.content-img {
+    transition: transform 0.3s ease;
+}
+.content-img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+}
+.block{
+    display: block;
+    list-style: none;
+}
+.block li{
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    margin-top: 10px;
+}
+.right-menu{
+    margin-left: 4em;
+    margin-right: 5em;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+.name{
+    text-align: right;
+    font-size: 20px;
+}
+.order{
+    list-style: none;
+}
+.order li{
+    margin-bottom: 40px;
+}
+.images{
+    list-style: none;
+}
+.images li{
+    margin-top: 15px;
+}
+.images img{
+    width: 650px;
+    height: 400px;
+}
+.fas.fa-check{
+    font-size: 60px;
+    color: greenyellow;
+    margin-left: 30px;
+}
+.fas.fa-times{
+    font-size: 60px;
+    color: red;
+    margin-left: 30px;
+}
